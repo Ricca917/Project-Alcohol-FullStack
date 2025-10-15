@@ -1,8 +1,6 @@
-### 1. Titolo del Progetto
+# **Project: Alcohol**
 
-**Project: Alcohol**
-
-### 2. Descrizione del Progetto
+### 1. Descrizione del Progetto
 
 Applicazione Web  che permette di **scannerizzare i barcode**
 di vini, birre e superalcolici.  
@@ -12,19 +10,19 @@ Dopo la scansione, l’utente potrà visualizzare:
 - Suggerimenti di abbinamento con piatti e cibi specifici  
 - Ricette di cocktail che utilizzano quel superalcolico 
 
-### 3. Target
+### 2. Target
 
 L’app si rivolge principalmente a:  
 - Consumatori con **poca o nessuna conoscenza** di vini, birre e superalcolici  
 - Persone che vogliono scegliere in modo più consapevole e veloce quale prodotto acquistare o consumare  
 
-### 4. Mission
+### 3. Mission
 
 - Aiutare i clienti inesperti a **riconoscere e comprendere** meglio i prodotti alcolici  
 - Fornire suggerimenti personalizzati per il consumo (abbinamenti gastronomici e cocktail)  
 - Rendere più **interattiva e semplice** l’esperienza di scelta di vini, birre e superalcolici  
 
-### 5. Funzionalità Principali (Roadmap)
+### 4. Funzionalità Principali (Roadmap)
 
 - **Fase Uno:** Scannerizzazione etichetta e riconoscimento prodotto  
 - **Fase Due:** Visualizzazione scheda informativa completa  
@@ -33,7 +31,7 @@ L’app si rivolge principalmente a:
 - **Fase Cinque:** Registrazione e Login Utente
 - **Fase Sei:** Salvataggio dei preferiti
 
-### 6. Architettura Software
+### 5. Architettura Software
 
 - **Frontend Web:** React 19 + Vite.js  
 - **Mobile:** React Native  
@@ -41,12 +39,12 @@ L’app si rivolge principalmente a:
 - **Database:** Sqlite  
 - **API REST** Django Rest Framework  
 
-### 7. Note
+### 6. Note
 
 - La **prima versione** sarà sviluppata come WebApp  
 - Successivamente, verrà creata anche la versione **Mobile Nativa**
 
-### 8. Potenziale Mercato
+### 7. Potenziale Mercato
 
 - Consumatori giovani e curiosi che vogliono avvicinarsi al mondo degli alcolici
 - Ristoranti, enoteche e locali che potrebbero utilizzare l'app come strumento di supporto ai clienti
@@ -54,7 +52,7 @@ L’app si rivolge principalmente a:
 
 ---
 
-### Istruzione per l'uso
+# Istruzione per l'uso
 
 **Clonare questa repo col comando** *git clone git@github.com:Ricca917/Project-Alcohol-FullStack.git*
 
