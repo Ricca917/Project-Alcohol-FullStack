@@ -2,8 +2,6 @@
 
 **Project: Alcohol**
 
----
-
 ### 2. Descrizione del Progetto
 
 Applicazione Web  che permette di **scannerizzare i barcode**
@@ -14,15 +12,11 @@ Dopo la scansione, l’utente potrà visualizzare:
 - Suggerimenti di abbinamento con piatti e cibi specifici  
 - Ricette di cocktail che utilizzano quel superalcolico 
 
----
-
 ### 3. Target
 
 L’app si rivolge principalmente a:  
 - Consumatori con **poca o nessuna conoscenza** di vini, birre e superalcolici  
 - Persone che vogliono scegliere in modo più consapevole e veloce quale prodotto acquistare o consumare  
-
----
 
 ### 4. Mission
 
@@ -30,35 +24,27 @@ L’app si rivolge principalmente a:
 - Fornire suggerimenti personalizzati per il consumo (abbinamenti gastronomici e cocktail)  
 - Rendere più **interattiva e semplice** l’esperienza di scelta di vini, birre e superalcolici  
 
----
-
 ### 5. Funzionalità Principali (Roadmap)
 
 - **Fase Uno:** Scannerizzazione etichetta e riconoscimento prodotto  
 - **Fase Due:** Visualizzazione scheda informativa completa  
 - **Fase Tre:** Suggerimenti di abbinamento con piatti e cibi  
 - **Fase Quattro:** Ricette di cocktail in base al superalcolico selezionato
-- **Fase Cinque:** Possibilità di salvare i prodotti preferiti
-
----
+- **Fase Cinque:** Registrazione e Login Utente
+- **Fase Sei:** Salvataggio dei preferiti
 
 ### 6. Architettura Software
 
 - **Frontend Web:** React 19 + Vite.js  
 - **Mobile:** React Native  
-- **Backend:** Python/Django *oppure* Node.js 22 LTS + Express  
-- **Database:** MySQL  
-- **API REST** per la comunicazione tra frontend e backend  
-
----
+- **Backend:** Django 
+- **Database:** Sqlite  
+- **API REST** Django Rest Framework  
 
 ### 7. Note
 
 - La **prima versione** sarà sviluppata come WebApp  
 - Successivamente, verrà creata anche la versione **Mobile Nativa**
-- Il progetto può essere espanso con funzionalità aggiuntive (es. suggerimenti da IA)
-
----
 
 ### 8. Potenziale Mercato
 
