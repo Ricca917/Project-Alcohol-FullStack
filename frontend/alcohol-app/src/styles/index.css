@@ -1,0 +1,51 @@
+/* index.css */
+
+/* Reset molto semplice */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sfondo generale */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Immagine di sfondo */
+  background-image: url("https://images.pexels.com/photos/372959/pexels-photo-372959.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Titolo principale */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7b1e1e;
+  /* bordeaux vino */
+}
+
+/* Sottotitoli */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7b1e1e;
+}
+
+/* Input testo generico (non MUI) */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
