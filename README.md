@@ -70,23 +70,49 @@ L’app si rivolge principalmente a:
 
 ### Istruzione per l'uso
 
-1. Clonare questa repo col comando *git clone* git@github.com:Ricca917/Project-Alcohol.git
+**Clonare questa repo col comando** *git clone git@github.com:Ricca917/Project-Alcohol-FullStack.git*
 
-2. Entrare nella directory *alcohol-app*
+## Setup Backend
 
-3. Installare pacchetti Node tramite comando *npm install*
+1. Entrare nella directory *backend*
 
-4. Installare dipendenze aggiuntive: 
+2. Creare ambiente virtuale con *python -m venv .venv*
+
+3. Attivare l'ambiente con *source .venv/Scripts/activate* (Windows)
+    *source .venv/bin/activate* (linux/MacOS)
+
+4. Installare pacchetti Django *pip install -r requirements.txt*
+
+ NB: il file "requirements.txt" deve essere aggiornato ogni volta che si 
+    aggiungono pacchetti, usando *pip freeze > requirements.txt*
+
+5. Applicare le migrazioni con *python manage.py migrate*
+
+6. Creare un admin con *python manage.py createsuperuser* (inserendo user,mail, password)
+
+7. Popolare il db con *python manage.py loaddata backup.json*
+
+8. Avviare il backend Django *python manage.py runserver*
+
+9. Accedere alla Amministrazione *http://127.0.0.1:8000/admin/* usando le credenziali del admin creato al punto 6
+
+## Setup Frontend
+
+1. Entrare nella directory *alcohol-app*
+
+2. Installare pacchetti Node tramite comando *npm install*
+
+3. Installare dipendenze aggiuntive: 
 
     - React-router-dom: *npm install react-router-dom*
     
     - Material UI: *npm install @mui/material @mui/icons-material @emotion/react @emotion/styled* 
     
-    - API Barcode: *npm install quagga* vedi repo: https://github.com/serratus/quaggaJS
+    - API Barcode: *npm install quagga* repo: https://github.com/serratus/quaggaJS
 
-5. Avviare l'applicazione con il comando *npm run dev*
+4. Avviare l'applicazione con il comando *npm run dev*
 
-6. Scannerizzare uno dei barcode forniti nella directory *assets* oppure inserirli manualmente:
+5. Scannerizzare uno dei barcode forniti nella directory *assets* oppure inserirli manualmente:
 
     Barcode Utilizzabili al momento:
     - 12345670 
@@ -96,3 +122,4 @@ L’app si rivolge principalmente a:
 In caso di problemi di lettura, stampare il file PDF "Codici a Barre di prova" e riprovare.
 
 ---
+
