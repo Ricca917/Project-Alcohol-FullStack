@@ -17,14 +17,14 @@ class ProductViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(barcode=barcode)
         return queryset
 
-    @action(detail=True, methods=['get'])
+    @action(detail=True, methods=['get']) # decoratore per creare un'azione personalizzata
     def food_pairings(self, request, pk=None): 
         product = self.get_object()
         pairings = product.food_pairings.all()
         serializer = FoodPairingSerializer(pairings, many=True) 
         return Response(serializer.data)    
 
-    @action(detail=True, methods=['get'])
+    @action(detail=True, methods=['get']) 
     def cocktails(self, request, pk=None):
         product = self.get_object()
         cocktails = product.cocktails.all()  
