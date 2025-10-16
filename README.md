@@ -7,36 +7,52 @@ di vini, birre e superalcolici.
 Dopo la scansione, l’utente potrà visualizzare:
 
 - Le informazioni complete del prodotto (nome, gradazione, provenienza, descrizione, ecc.)  
+
 - Suggerimenti di abbinamento con piatti e cibi specifici  
+
 - Ricette di cocktail che utilizzano quel superalcolico 
 
 ### 2. Target
 
 L’app si rivolge principalmente a:  
+
 - Consumatori con **poca o nessuna conoscenza** di vini, birre e superalcolici  
+
 - Persone che vogliono scegliere in modo più consapevole e veloce quale prodotto acquistare o consumare  
 
 ### 3. Mission
 
 - Aiutare i clienti inesperti a **riconoscere e comprendere** meglio i prodotti alcolici  
+
 - Fornire suggerimenti personalizzati per il consumo (abbinamenti gastronomici e cocktail)  
+
 - Rendere più **interattiva e semplice** l’esperienza di scelta di vini, birre e superalcolici  
 
 ### 4. Funzionalità Principali (Roadmap)
 
-- **Fase Uno:** Scannerizzazione etichetta e riconoscimento prodotto  
-- **Fase Due:** Visualizzazione scheda informativa completa  
-- **Fase Tre:** Suggerimenti di abbinamento con piatti e cibi  
-- **Fase Quattro:** Ricette di cocktail in base al superalcolico selezionato
-- **Fase Cinque:** Registrazione e Login Utente
-- **Fase Sei:** Salvataggio dei preferiti
+- ✅ **Fase Uno:** Scannerizzazione etichetta e riconoscimento prodotto — *Completata*  
+
+- ✅ **Fase Due:** Visualizzazione scheda informativa completa — *Completata*  
+
+- ✅ **Fase Tre:** Suggerimenti di abbinamento con piatti e cibi — *Completata*  
+
+- ✅ **Fase Quattro:** Ricette di cocktail in base al superalcolico selezionato — *Completata*  
+
+- ⏳ **Fase Cinque:** Registrazione e Login Utente — *In arrivo*  
+
+- ⏳ **Fase Sei:** Salvataggio dei preferiti — *In arrivo*  
+
 
 ### 5. Architettura Software
 
 - **Frontend Web:** React 19 + Vite.js  
+
 - **Mobile:** React Native  
+
 - **Backend:** Django 
+
 - **Database:** Sqlite  
+
 - **API REST** Django Rest Framework  
 
 ### 6. Note
@@ -47,7 +63,9 @@ L’app si rivolge principalmente a:
 ### 7. Potenziale Mercato
 
 - Consumatori giovani e curiosi che vogliono avvicinarsi al mondo degli alcolici
+
 - Ristoranti, enoteche e locali che potrebbero utilizzare l'app come strumento di supporto ai clienti
+
 - Crescente interesse verso soluzioni digitali che semplificano la scelta di vini, birre e cocktail
 
 ---
