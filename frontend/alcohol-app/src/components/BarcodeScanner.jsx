@@ -1,3 +1,4 @@
+
 export default function BarcodeScanner({ onDetected }) {
   useEffect(() => {
     Quagga.init(

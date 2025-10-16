@@ -19,16 +19,14 @@ class ProductViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get']) # decoratore per creare un'azione personalizzata
     def food_pairings(self, request, pk=None): 
-        product = self.get_object()
-        pairings = product.food_pairings.all()
-        serializer = FoodPairingSerializer(pairings, many=True) 
+        product = Product.objects.get(id=pk)        
+        serializer = FoodPairingSerializer(product.food_pairings.all(), many=True) 
         return Response(serializer.data)    
 
     @action(detail=True, methods=['get']) 
     def cocktails(self, request, pk=None):
-        product = self.get_object()
-        cocktails = product.cocktails.all()  
-        serializer = CocktailSerializer(cocktails, many=True)
+        product = Product.objects.get(id=pk)         
+        serializer = CocktailSerializer(product.cocktails.all(), many=True)
         return Response(serializer.data)
 
 class FoodPairingViewSet(viewsets.ModelViewSet):

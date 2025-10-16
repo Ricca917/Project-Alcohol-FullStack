@@ -4,9 +4,9 @@ from django.db import models
 
 class Product(models.Model):  # model per i prodotti alcolici
     PRODUCT_TYPES = [
-        ('wine', 'Vino'),
-        ('beer', 'Birra'),
-        ('liquor', 'Liquore'),
+        ('vino', 'Vino'),
+        ('birra', 'Birra'),
+        ('liquore', 'Liquore'),
     ]
 
     name = models.CharField(max_length=100)
