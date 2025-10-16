@@ -27,15 +27,16 @@ export default function Pairings() {
         const foundProduct = await res.json();
         setProduct(foundProduct);
 
-        // Fetch abbinamenti cibo (senza campo immagine)
+        // Fetch abbinamenti cibo
         const pairRes = await fetch(`http://127.0.0.1:8000/api/products/${id}/food_pairings/`);
         if (!pairRes.ok) throw new Error("Errore nel recupero degli abbinamenti cibo");
         setPairings(await pairRes.json());
 
-        // Fetch cocktails
+        // Fetch cocktail
         const cocktailRes = await fetch(`http://127.0.0.1:8000/api/products/${id}/cocktails/`);
         if (!cocktailRes.ok) throw new Error("Errore nel recupero dei cocktail");
         setCocktails(await cocktailRes.json());
+
       } catch (err) {
         console.error(err);
         alert(err.message);
@@ -54,7 +55,6 @@ export default function Pairings() {
       <>
         <PrimarySearchAppBar onSearch={handleSearch} visible={true} />
         <CardContainer>
-          <p>Nessun prodotto selezionato</p>
           <Buttons text="Torna alla Home" to="/" />
         </CardContainer>
       </>
@@ -68,34 +68,31 @@ export default function Pairings() {
         <h1>Lista Abbinamenti</h1>
         <h2>{product.name}</h2>
 
-        {pairings.length > 0 ? pairings.map((p, i) => (
+        {/* Abbinamenti Cibo */}
+        {pairings.length > 0 && pairings.map((p, i) => (
           <ProductCard
             key={i}
             data={{
               name: p.food_name,
               description: p.notes,
-              image: p.image || "https://via.placeholder.com/150", // placeholder
+              image: p.image || "https://via.placeholder.com/150",
             }}
             showButton={false}
           />
-        )) : <p>Nessun abbinamento disponibile</p>}
+        ))}
 
-        {cocktails.length > 0 && (
-          <>
-            <h3>Cocktail Consigliati</h3>
-            {cocktails.map((c, i) => (
-              <ProductCard
-                key={i}
-                data={{
-                  name: c.name,
-                  image: c.image || "https://via.placeholder.com/150",
-                  description: c.description || c.instructions || "Nessuna descrizione"
-                }}
-                showButton={false}
-              />
-            ))}
-          </>
-        )}
+        {/* Cocktail */}
+        {cocktails.length > 0 && cocktails.map((c, i) => (
+          <ProductCard
+            key={i}
+            data={{
+              name: c.name,
+              description: c.description || c.instructions || "Nessuna descrizione",
+              image: c.image || "https://via.placeholder.com/150",
+            }}
+            showButton={false}
+          />
+        ))}
 
         <Buttons
           text="Torna alla Home"

@@ -100,25 +100,25 @@ export default function WelcomeCard({ onSearch }) {
     <Card classes={{ root: 'welcomeCard' }}>
       <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         {/* Logo */}
-        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 1 }}>
           <CardMedia
             component="img"
             image={logo}
             alt="Project: Alcohol logo"
-            sx={{ width: 200, height: 120 }}            
+            sx={{ width: 220, height: 100 }}            
           />
         </Box>
 
         {/* Titolo */}
         <Typography variant="h4" component="div" gutterBottom sx={{ color: 'white', textAlign: 'center' }}>
-          Benvenuto su Project: Alcohol
+          Benvenuto
         </Typography>
 
         {/* Testo descrittivo */}
         <Typography variant="body1" color="text.secondary" sx={{ color: 'white', textAlign: 'center', mb: 2 }}>
           Scannerizza il barcode o inseriscilo manualmente.
           <br />
-          Vedrai le informazioni dettagliate e abbinamenti consigliati.
+          
         </Typography>
 
         {/* Barra di ricerca */}
