@@ -74,7 +74,7 @@ export default function Pairings() {
             data={{
               name: p.food_name,
               description: p.notes,
-              image: "https://via.placeholder.com/150", // placeholder
+              image: p.image || "https://via.placeholder.com/150", // placeholder
             }}
             showButton={false}
           />

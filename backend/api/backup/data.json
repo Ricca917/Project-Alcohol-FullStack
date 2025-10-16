@@ -1,0 +1,137 @@
+[
+{
+  "model": "api.product",
+  "pk": 1,
+  "fields": {
+    "name": "Chianti Classico",
+    "barcode": "12345670",
+    "type": "vino",
+    "description": "Vino rosso italiano di corpo medio, dal colore rubino intenso. Al naso si percepiscono sentori di frutti rossi maturi, ciliegia e prugna, con leggere note speziate. Al palato è equilibrato, con tannini morbidi e finale persistente, ideale con carni rosse, formaggi stagionati e piatti di pasta tradizionale",
+    "origin": "Toscana, Italia",
+    "abv": "13.5%",
+    "image": "https://oltrevino.it/4150-superlarge_default_2x/etichetta-storica-chianti-classico-docg-gran-selezione-ormanni.jpg"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 2,
+  "fields": {
+    "name": "Ichnusa Non Filtrata",
+    "barcode": "96385074",
+    "type": "birra",
+    "description": "Birra lager chiara, leggermente torbida, prodotta con 100% puro malto d'orzo. La mancata filtrazione conferisce un corpo pieno e rotondo, con note erbacee e sentori di frutta gialla e albicocca. Il finale è caratterizzato da una lieve nota amara.",
+    "origin": "Sardegna, Italia",
+    "abv": "5.0%",
+    "image": "https://www.dupliclick.it/photo/2022/05/16/4/main/photo/pim-454314-1-main-20220510-193034.jpg"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 3,
+  "fields": {
+    "name": "Jack Daniel's Old No.7",
+    "barcode": "25847109",
+    "type": "liquore",
+    "description": "Whiskey Tennessee iconico dal colore ambrato intenso. Al naso emergono note di caramello, vaniglia e legno di quercia, con leggeri sentori di frutta secca. Al palato è morbido ma corposo, con finale lungo e leggermente affumicato",
+    "origin": "USA",
+    "abv": "40%",
+    "image": "https://www.liquidoitalia.com/wp-content/uploads/2021/04/Progetto-senza-titolo-61-600x600.png"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "food_name": "Carne rossa",
+    "notes": "Bistecca alla fiorentina cotta sulla brace, condita con olio extravergine d'oliva e rosmarino.",
+    "image": "https://www.poloristorazione.it/attachment/get/21955/65b9fb2808426402696783.jpg"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "food_name": "Formaggi Stagionati",
+    "notes": "Tagliere di formaggi stagionati misti, serviti con miele e noci.",
+    "image": "https://thinkmilkbesmart.eu/wp-content/uploads/2021/09/formaggio-stagionato.jpg"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 3,
+  "fields": {
+    "product": 1,
+    "food_name": "Pasta al ragù",
+    "notes": "Pasta all'uovo con ragù di carne, cotta lentamente e servita con parmigiano grattugiato.",
+    "image": "https://www.cuocicuoci.com/wp-content/uploads/2022/05/rigatoni-al-ragu.jpg"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 4,
+  "fields": {
+    "product": 2,
+    "food_name": "Pizza",
+    "notes": "Pizza margherita con pomodoro, mozzarella e basilico fresco.",
+    "image": "https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 5,
+  "fields": {
+    "product": 2,
+    "food_name": "Salsiccia",
+    "notes": "Salsiccia alla griglia servita con senape artigianale.",
+    "image": "https://www.moltofood.it/wp-content/uploads/2024/07/Salsiccia.jpg"
+  }
+},
+{
+  "model": "api.foodpairing",
+  "pk": 6,
+  "fields": {
+    "product": 2,
+    "food_name": "Bretzel",
+    "notes": "Bretzel morbido salato da forno con semi di sale grosso.",
+    "image": "https://wips.plug.it/cips/buonissimo.org/cms/2022/08/bretzel.jpg?w=541&a=c&h=309"
+  }
+},
+{
+  "model": "api.cocktail",
+  "pk": 2,
+  "fields": {
+    "name": "Old Fashioned",
+    "description": "Cocktail secco, aromatico, con note di arancia e legno",
+    "image": "https://pendletonwhisky.com/wp-content/uploads/2020/12/1910-oldfashioned@4x-2-1.jpg",
+    "liquors": [
+      3
+    ]
+  }
+},
+{
+  "model": "api.cocktail",
+  "pk": 3,
+  "fields": {
+    "name": "Whiskey Sour",
+    "description": "Cocktail equilibrato, fresco e agrumato, perfetto d’estate o come pre-dinner",
+    "image": "https://mixthatdrink.com/wp-content/uploads/2023/03/whiskey-sour-cocktail-720x720.jpg",
+    "liquors": [
+      3
+    ]
+  }
+},
+{
+  "model": "api.cocktail",
+  "pk": 5,
+  "fields": {
+    "name": "Manhattan",
+    "description": "Cocktail elegante, dolce-amaro, con note di vaniglia e spezie",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/A_Manhattan.jpg",
+    "liquors": [
+      3
+    ]
+  }
+}
+]

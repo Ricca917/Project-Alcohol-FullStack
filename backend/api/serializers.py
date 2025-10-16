@@ -7,15 +7,13 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = ['id', 'barcode', 'name', 'type', 'abv', 'origin', 'description', 'image']
 
 class FoodPairingSerializer(serializers.ModelSerializer):
-    product = serializers.PrimaryKeyRelatedField(
-        queryset=Product.objects.all()
-    )
+    product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all())
     product_detail = ProductSerializer(source='product', read_only=True)
     
 
     class Meta:
         model = FoodPairing
-        fields = ['id', 'product', 'product_detail', 'food_name', 'notes']
+        fields = ['id', 'product', 'product_detail', 'food_name', 'notes','image']
 
 class CocktailSerializer(serializers.ModelSerializer):
     # Usa id invece di barcode per i liquori
@@ -27,4 +25,4 @@ class CocktailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cocktail
-        fields = ['id', 'name', 'description', 'liquors', 'liquors_detail']
+        fields = ['id', 'name', 'description', 'liquors', 'liquors_detail', 'image']

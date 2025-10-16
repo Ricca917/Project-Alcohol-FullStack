@@ -74,7 +74,7 @@ L’app si rivolge principalmente a:
 
 6. Creare un admin con *python manage.py createsuperuser* (inserendo user,mail, password)
 
-7. Popolare il db con *python manage.py loaddata backup.json*
+7. Popolare il db con *python manage.py loaddata api/backup/data.json*
 
 8. Avviare il backend Django *python manage.py runserver*
 
