@@ -4,7 +4,7 @@
 
 Applicazione Web  che permette di **scannerizzare i barcode**
 di vini, birre e superalcolici.  
-Dopo la scansione, l’utente potrà visualizzare:
+A seguito della scansione, l’utente visualizzerà:
 
 - Le informazioni complete del prodotto (nome, gradazione, provenienza, descrizione, ecc.)  
 
@@ -22,11 +22,11 @@ L’app si rivolge principalmente a:
 
 ### 3. Mission
 
-- Aiutare i clienti inesperti a **riconoscere e comprendere** meglio i prodotti alcolici  
+- Aiutare i clienti a **riconoscere e comprendere** meglio i prodotti alcolici  
 
 - Fornire suggerimenti personalizzati per il consumo (abbinamenti gastronomici e cocktail)  
 
-- Rendere più **interattiva e semplice** l’esperienza di scelta di vini, birre e superalcolici  
+- Rendere più **interattiva e semplice** l’esperienza di scelta prodotti  
 
 ### 4. Funzionalità Principali (Roadmap)
 
@@ -38,10 +38,11 @@ L’app si rivolge principalmente a:
 
 - ✅ **Fase Quattro:** Ricette di cocktail in base al superalcolico selezionato — *Completata*  
 
-- ⏳ **Fase Cinque:** Registrazione e Login Utente — *In arrivo*  
+- ⏳ **Fase Cinque:** Registrazione e Login Utente — *In arrivo*
 
 - ⏳ **Fase Sei:** Salvataggio dei preferiti — *In arrivo*  
 
+- ⏳ **Fasi Sette** Popolamento del db tramite scan utente (se prodtto non già presente) — *in arrivo*
 
 ### 5. Architettura Software
 
@@ -117,11 +118,15 @@ L’app si rivolge principalmente a:
 5. Scannerizzare uno dei barcode forniti nella directory *assets* oppure inserirli manualmente:
 
     Barcode Utilizzabili al momento:
+    
     - 12345670 
+    
     - 96385074
+    
     - 25847109
 
-In caso di problemi di lettura, stampare il file PDF "Codici a Barre di prova" e riprovare.
+- Il file PDF "Codici a Barre di prova" contiene i dati per gli scan.
+se ci fossero problemi di lettura dovuta allo schermo, stampare quel file
 
 ---
 
